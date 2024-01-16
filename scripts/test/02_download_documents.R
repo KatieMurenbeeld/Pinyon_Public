@@ -2,7 +2,7 @@
 
 library(pdftools)
 
-file_list <- readLines('file_list.txt')
+file_list <- readLines('decision_file_list.txt')
 
 for (i in file_list) {
   print(i)
@@ -10,4 +10,4 @@ for (i in file_list) {
 
 nepa_test <- lapply(file_list, pdf_text) 
 
-nepa_test[[112]]
+nepa_test[[4]]
